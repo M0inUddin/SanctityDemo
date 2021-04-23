@@ -3,7 +3,7 @@ using System.Threading;//for using thread.sleep method
 
 namespace Lab02
 {
-    class Program
+    class Program //this is demo repositpory select
     {
         public void menu()
         {
