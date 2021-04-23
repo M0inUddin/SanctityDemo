@@ -8,6 +8,7 @@ namespace Lab02
         public void menu()
         {
             string choice = "-1";
+            //asdfadsf
 
             const float pi = 3.14f;
 
