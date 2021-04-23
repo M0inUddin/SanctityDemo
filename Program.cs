@@ -10,6 +10,8 @@ namespace Lab02
             string choice = "-1";
             //asdfadsf
 
+            // changes
+
             const float pi = 3.14f;
 
             while (choice != "0")
