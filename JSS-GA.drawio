@@ -1,44 +1,50 @@
-<mxfile host="app.diagrams.net" modified="2022-08-15T06:07:16.456Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="PkJvxrnlRZMg_OxXMgd6" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-15T10:52:44.688Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="ny451-UcB4wX3PaliHD3" version="20.2.3" type="github">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
-    <mxGraphModel dx="964" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="0">
+    <mxGraphModel dx="694" dy="418" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-1" value="Machine&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-1" value="Machine&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="30" y="210" width="480" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-2" value="int machine_id_&#xa;	int machine_free_time_&#xa;	free_slots free_slots_ (free_slots is a boost class)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xL0LI_DuVyFmDKx2Fw36-1">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-2" value="int machine_id_&#xa; int machine_free_time_&#xa; free_slots free_slots_ (free_slots is a boost class)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xL0LI_DuVyFmDKx2Fw36-1" vertex="1">
           <mxGeometry y="26" width="480" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="xL0LI_DuVyFmDKx2Fw36-1">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="xL0LI_DuVyFmDKx2Fw36-1" vertex="1">
           <mxGeometry y="80" width="480" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-4" value="Machine(int machine_id, int machine_free_time)&#xa;	void OccupyTimeSlot(int start_time, int end_time)&#xa;	void ScheduleOperation(Operation&amp; operation, int start_time, int end_time)&#xa;	void ScheduleOperationNonMappable(Operation&amp; operation, int start_time, int end_time)&#xa;	int GetSuitableTimeSlot(int operation_idx, int prev_op_end_time, int operation_duration)&#xa;	static Machine&amp; GetMachineByID(int machine_id, std::map&lt;int, Machine&gt;&amp; machines)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xL0LI_DuVyFmDKx2Fw36-1">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-4" value="Machine(int machine_id, int machine_free_time)&#xa; void OccupyTimeSlot(int start_time, int end_time)&#xa; void ScheduleOperation(Operation&amp; operation, int start_time, int end_time)&#xa; void ScheduleOperationNonMappable(Operation&amp; operation, int start_time, int end_time)&#xa; int GetSuitableTimeSlot(int operation_idx, int prev_op_end_time, int operation_duration)&#xa; static Machine&amp; GetMachineByID(int machine_id, std::map&lt;int, Machine&gt;&amp; machines)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xL0LI_DuVyFmDKx2Fw36-1" vertex="1">
           <mxGeometry y="88" width="480" height="102" as="geometry" />
         </mxCell>
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-5" value="Operations" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-5" value="Operations" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="30" y="430" width="440" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-6" value="const int sequence_;&#xa;	const int duration_;&#xa;	const Process&amp; process_;&#xa;	int start_time_{-1};&#xa;	int end_time_{-1};&#xa;	int allotted_machine_id_{-1};&#xa;	int operation_id_{ -1 };" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xL0LI_DuVyFmDKx2Fw36-5">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-6" value="const int sequence_;&#xa; const int duration_;&#xa; const Process&amp; process_;&#xa; int start_time_{-1};&#xa; int end_time_{-1};&#xa; int allotted_machine_id_{-1};&#xa; int operation_id_{ -1 };" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xL0LI_DuVyFmDKx2Fw36-5" vertex="1">
           <mxGeometry y="26" width="440" height="114" as="geometry" />
         </mxCell>
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="xL0LI_DuVyFmDKx2Fw36-5">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="xL0LI_DuVyFmDKx2Fw36-5" vertex="1">
           <mxGeometry y="140" width="440" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-8" value="Operation(int process_id, int sequence, int duration, const Process&amp; process);&#xa;	void SetStartTime(int start_time);&#xa;	void SetEndTime(int end_time);&#xa;	void SetAllottedMachine(int machine_id_);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xL0LI_DuVyFmDKx2Fw36-5">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-8" value="Operation(int process_id, int sequence, int duration, const Process&amp; process);&#xa; void SetStartTime(int start_time);&#xa; void SetEndTime(int end_time);&#xa; void SetAllottedMachine(int machine_id_);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xL0LI_DuVyFmDKx2Fw36-5" vertex="1">
           <mxGeometry y="148" width="440" height="72" as="geometry" />
         </mxCell>
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-10" value="Bucket" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-10" value="Bucket" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="550" y="360" width="180" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-11" value="int bucket_id_{-1};&#xa;	map&lt;int, Job&gt; jobs_;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xL0LI_DuVyFmDKx2Fw36-10">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-11" value="int bucket_id_{-1};&#xa; map&lt;int, Job&gt; jobs_;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xL0LI_DuVyFmDKx2Fw36-10" vertex="1">
           <mxGeometry y="26" width="180" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="xL0LI_DuVyFmDKx2Fw36-10">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="xL0LI_DuVyFmDKx2Fw36-10" vertex="1">
           <mxGeometry y="70" width="180" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-13" value="Bucket() = default&#xa;	explicit Bucket(int bucket_id)&#xa;	void AddJob(Job&amp; job)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xL0LI_DuVyFmDKx2Fw36-10">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-13" value="Bucket() = default&#xa; explicit Bucket(int bucket_id)&#xa; void AddJob(Job&amp; job)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xL0LI_DuVyFmDKx2Fw36-10" vertex="1">
           <mxGeometry y="78" width="180" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="8Wn9Af_72iYiqqPnA7Zo-1" value="Using" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="790" y="106" width="340" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="8Wn9Af_72iYiqqPnA7Zo-2" value="using Random = effolkronium::random_static;&#xa;using chromosome_t = std::vector&lt;int&gt;;&#xa;using population_t = std::vector&lt;pair&lt;chromosome_t, int&gt;&gt;;&#xa;using jobs_t = std::map&lt;int, Job&gt;;&#xa;using machines_t = std::map&lt;int, Machine&gt;;&#xa;using Random = effolkronium::random_static;&#xa;using time_slot = interval&lt;int&gt;::type;&#xa;using free_slots = interval_set&lt;int&gt;;&#xa;using json = nlohmann::json;&#xa;using processes_t = std::map&lt;int, Process&gt;;&#xa;using buckets_t = std::vector&lt;Bucket&gt;;&#xa;using processes = std::map&lt;int, Process&gt;;&#xa;	using machines = std::vector&lt;int&gt;;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8Wn9Af_72iYiqqPnA7Zo-1">
+          <mxGeometry y="26" width="340" height="214" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
