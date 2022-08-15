@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-15T11:12:50.239Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="VTu9KvRl_SmTBcpCDH2V" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-15T11:39:29.313Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="AYM6_SyQ-DC0v_LY-NpH" version="20.2.3" type="github">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
-    <mxGraphModel dx="2893" dy="1740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1447" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -29,7 +29,7 @@
           <mxGeometry y="148" width="440" height="72" as="geometry" />
         </mxCell>
         <mxCell id="xL0LI_DuVyFmDKx2Fw36-10" value="Bucket" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="520" y="220" width="180" height="130" as="geometry" />
+          <mxGeometry x="730" y="220" width="180" height="130" as="geometry" />
         </mxCell>
         <mxCell id="xL0LI_DuVyFmDKx2Fw36-11" value="int bucket_id_{-1};&#xa; map&lt;int, Job&gt; jobs_;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xL0LI_DuVyFmDKx2Fw36-10" vertex="1">
           <mxGeometry y="26" width="180" height="44" as="geometry" />
@@ -47,7 +47,7 @@
           <mxGeometry y="26" width="340" height="194" as="geometry" />
         </mxCell>
         <mxCell id="8Wn9Af_72iYiqqPnA7Zo-6" value="Process" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="520" y="350" width="400" height="190" as="geometry" />
+          <mxGeometry x="620" y="350" width="400" height="190" as="geometry" />
         </mxCell>
         <mxCell id="8Wn9Af_72iYiqqPnA7Zo-7" value="using processes = std::map&lt;int, Process&gt;;&#xa;	using machines = std::vector&lt;int&gt;;&#xa;int process_id_;&#xa;	bool mappable_;&#xa;	std::vector&lt;int&gt; associated_machines_;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8Wn9Af_72iYiqqPnA7Zo-6">
           <mxGeometry y="26" width="400" height="84" as="geometry" />
@@ -95,7 +95,7 @@
           <mxGeometry y="128" width="290" height="112" as="geometry" />
         </mxCell>
         <mxCell id="8Wn9Af_72iYiqqPnA7Zo-26" value="file_processor" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="520" y="540" width="410" height="180" as="geometry" />
+          <mxGeometry x="620" y="540" width="410" height="180" as="geometry" />
         </mxCell>
         <mxCell id="8Wn9Af_72iYiqqPnA7Zo-27" value="class Bucket;&#xa;using json = nlohmann::json;&#xa;&#xa;json LoadInputFile(const std::string&amp; input_file_path);&#xa;&#xa;string convertMakeSpanToISODateTime(int makespan);&#xa;&#xa;void CreateBryntumInputFile(Bucket&amp; buckets, machines_t&amp; machines);&#xa;&#xa;void CreateJSSOutputFile(buckets_t&amp; buckets, machines_t&amp; machines);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8Wn9Af_72iYiqqPnA7Zo-26">
           <mxGeometry y="26" width="410" height="154" as="geometry" />
