@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-15T10:52:44.688Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="ny451-UcB4wX3PaliHD3" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-15T10:54:33.417Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="KAUovt3aZqTlpzZ7_D2q" version="20.2.3" type="github">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="694" dy="418" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="0">
       <root>
@@ -41,10 +41,10 @@
           <mxGeometry y="78" width="180" height="52" as="geometry" />
         </mxCell>
         <mxCell id="8Wn9Af_72iYiqqPnA7Zo-1" value="Using" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="790" y="106" width="340" height="240" as="geometry" />
+          <mxGeometry x="540" y="40" width="340" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="8Wn9Af_72iYiqqPnA7Zo-2" value="using Random = effolkronium::random_static;&#xa;using chromosome_t = std::vector&lt;int&gt;;&#xa;using population_t = std::vector&lt;pair&lt;chromosome_t, int&gt;&gt;;&#xa;using jobs_t = std::map&lt;int, Job&gt;;&#xa;using machines_t = std::map&lt;int, Machine&gt;;&#xa;using Random = effolkronium::random_static;&#xa;using time_slot = interval&lt;int&gt;::type;&#xa;using free_slots = interval_set&lt;int&gt;;&#xa;using json = nlohmann::json;&#xa;using processes_t = std::map&lt;int, Process&gt;;&#xa;using buckets_t = std::vector&lt;Bucket&gt;;&#xa;using processes = std::map&lt;int, Process&gt;;&#xa;	using machines = std::vector&lt;int&gt;;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8Wn9Af_72iYiqqPnA7Zo-1">
-          <mxGeometry y="26" width="340" height="214" as="geometry" />
+        <mxCell id="8Wn9Af_72iYiqqPnA7Zo-2" value="Random = effolkronium::random_static;&#xa;chromosome_t = std::vector&lt;int&gt;;&#xa;population_t = std::vector&lt;pair&lt;chromosome_t, int&gt;&gt;;&#xa;jobs_t = std::map&lt;int, Job&gt;;&#xa;machines_t = std::map&lt;int, Machine&gt;;&#xa;Random = effolkronium::random_static;&#xa;time_slot = interval&lt;int&gt;::type;&#xa;free_slots = interval_set&lt;int&gt;;&#xa;json = nlohmann::json;&#xa;processes_t = std::map&lt;int, Process&gt;;&#xa;buckets_t = std::vector&lt;Bucket&gt;;&#xa;processes = std::map&lt;int, Process&gt;;&#xa;machines = std::vector&lt;int&gt;;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8Wn9Af_72iYiqqPnA7Zo-1">
+          <mxGeometry y="26" width="340" height="194" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
