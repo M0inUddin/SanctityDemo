@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-15T11:11:40.698Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="z39arezyvjZQY9Y3j8l5" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-15T11:12:50.239Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="VTu9KvRl_SmTBcpCDH2V" version="20.2.3" type="github">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
-    <mxGraphModel dx="1021" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2893" dy="1740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -59,7 +59,7 @@
           <mxGeometry y="118" width="400" height="72" as="geometry" />
         </mxCell>
         <mxCell id="8Wn9Af_72iYiqqPnA7Zo-14" value="Job" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="700" y="220" width="270" height="130" as="geometry" />
+          <mxGeometry x="1120" y="240" width="270" height="130" as="geometry" />
         </mxCell>
         <mxCell id="8Wn9Af_72iYiqqPnA7Zo-15" value="int job_id_;&#xa;	std::vector&lt;Operation&gt; operations_;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8Wn9Af_72iYiqqPnA7Zo-14">
           <mxGeometry y="26" width="270" height="34" as="geometry" />
@@ -101,7 +101,7 @@
           <mxGeometry y="26" width="410" height="154" as="geometry" />
         </mxCell>
         <mxCell id="8Wn9Af_72iYiqqPnA7Zo-30" value="Namespace&#xa;Genetic" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="380" y="840" width="570" height="424" as="geometry" />
+          <mxGeometry x="1120" y="640" width="570" height="424" as="geometry" />
         </mxCell>
         <mxCell id="8Wn9Af_72iYiqqPnA7Zo-31" value="const double kCrossoverRate = 1;&#xa;	const double kMutationRate = 1;&#xa;&#xa;	struct OrderedOperation {&#xa;		int job_id;&#xa;		int operation_index;&#xa;		OrderedOperation(int job, int operation) : job_id(job), operation_index(operation) {}&#xa;	};" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8Wn9Af_72iYiqqPnA7Zo-30">
           <mxGeometry y="40" width="570" height="120" as="geometry" />
@@ -113,7 +113,7 @@
           <mxGeometry y="184" width="570" height="240" as="geometry" />
         </mxCell>
         <mxCell id="8Wn9Af_72iYiqqPnA7Zo-34" value="Namespace&#xa;Parser" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="370" y="1890" width="640" height="184" as="geometry" />
+          <mxGeometry x="1120" y="400" width="640" height="184" as="geometry" />
         </mxCell>
         <mxCell id="8Wn9Af_72iYiqqPnA7Zo-37" value="void ParseConfig(const json&amp; json_input_data);&#xa;&#xa;	void ParseMachines(const json&amp; json_input_data, machines_t&amp; machines);&#xa;&#xa;	void ParseProcesses(const json&amp; json_input_data, processes_t&amp; processes, machines_t&amp; machines);&#xa;&#xa;	void ParseBuckets(const json&amp; json_input_data, buckets_t&amp; buckets, processes_t&amp; processes);&#xa;&#xa;	void ParseData(const json&amp; json_input_data, processes_t&amp; processes, machines_t&amp; machines, buckets_t&amp; buckets);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8Wn9Af_72iYiqqPnA7Zo-34">
           <mxGeometry y="40" width="640" height="144" as="geometry" />
