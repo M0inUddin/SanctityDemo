@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-26T09:44:33.447Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63" etag="-ZqheH8vVr14P7HMQ5tA" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-26T09:51:44.369Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63" etag="h-MsUZCCU6s5wJfbYv7l" version="20.2.7" type="github">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="1240" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="0">
       <root>
@@ -16,7 +16,7 @@
         <mxCell id="xL0LI_DuVyFmDKx2Fw36-4" value="Machine(int machine_id, int machine_free_time)&#xa; void OccupyTimeSlot(int start_time, int end_time)&#xa; void ScheduleOperation(Operation&amp; operation, int start_time, int end_time)&#xa; void ScheduleOperationNonMappable(Operation&amp; operation, int start_time, int end_time)&#xa; int GetSuitableTimeSlot(int operation_idx, int prev_op_end_time, int operation_duration)&#xa; static Machine&amp; GetMachineByID(int machine_id, std::map&lt;int, Machine&gt;&amp; machines)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xL0LI_DuVyFmDKx2Fw36-1" vertex="1">
           <mxGeometry y="88" width="480" height="102" as="geometry" />
         </mxCell>
-        <mxCell id="xL0LI_DuVyFmDKx2Fw36-5" value="Operations" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+        <mxCell id="xL0LI_DuVyFmDKx2Fw36-5" value="Operation" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="880" y="1180" width="440" height="220" as="geometry" />
         </mxCell>
         <mxCell id="xL0LI_DuVyFmDKx2Fw36-6" value="const int sequence_;&#xa; const int duration_;&#xa; const Process&amp; process_;&#xa; int start_time_{-1};&#xa; int end_time_{-1};&#xa; int allotted_machine_id_{-1};&#xa; int operation_id_{ -1 };" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xL0LI_DuVyFmDKx2Fw36-5" vertex="1">
